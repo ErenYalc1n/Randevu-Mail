@@ -86,7 +86,7 @@ namespace Randevu
             string konu = "Randevu";
             string icerik = "Sayýn " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bölümündeki randevunuz talebinizle iptal edilmiþtir.";
 
-            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "Cold7Basdq");
+            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "sifre");
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress("testhesap94@outlook.com", "Eren Yalçýn");
             mail.To.Add(kime);
@@ -114,7 +114,7 @@ namespace Randevu
             string konu = "Randevu";
             string icerik = "Sayýn " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bölümünden randevunuz oluþturulmuþtur.";
 
-            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "Cold7Basdq");
+            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "sifre");
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress("testhesap94@outlook.com", "Eren Yalçýn");
             mail.To.Add(kime);
