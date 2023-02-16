@@ -55,11 +55,11 @@ namespace Randevu
             oku.Close();
             string kime = label11.Text;
             string konu = "Randevu";
-            string icerik = "Sayın " + textBox4.Text + " " + textBox5.Text + ",  " + comboBox1.Text + " bölümündeki randevunuz talebinizle "+dateTimePicker1.Text+" tarihine alınmıştır.";
+            string icerik = "SayÃ½n " + textBox4.Text + " " + textBox5.Text + ",  " + comboBox1.Text + " bÃ¶lÃ¼mÃ¼ndeki randevunuz talebinizle "+dateTimePicker1.Text+" tarihine alÃ½nmÃ½Ã¾tÃ½r.";
 
-            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "Cold7Basdq");
+            sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "sifre");
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("testhesap94@outlook.com", "Eren Yalçın");
+            mail.From = new MailAddress("testhesap94@outlook.com", "Eren YalÃ§Ã½n");
             mail.To.Add(kime);
             //mail.To.Add("alici2@mail.com");
             mail.Subject = konu;
@@ -84,11 +84,11 @@ namespace Randevu
             oku.Close();
             string kime = label11.Text;
             string konu = "Randevu";
-            string icerik = "Sayın " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bölümündeki randevunuz talebinizle iptal edilmiştir.";
+            string icerik = "SayÃ½n " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bÃ¶lÃ¼mÃ¼ndeki randevunuz talebinizle iptal edilmiÃ¾tir.";
 
             sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "Cold7Basdq");
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("testhesap94@outlook.com", "Eren Yalçın");
+            mail.From = new MailAddress("testhesap94@outlook.com", "Eren YalÃ§Ã½n");
             mail.To.Add(kime);
             //mail.To.Add("alici2@mail.com");
             mail.Subject = konu;
@@ -112,11 +112,11 @@ namespace Randevu
             }          
             string kime = label11.Text;
             string konu = "Randevu";
-            string icerik = "Sayın " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bölümünden randevunuz oluşturulmuştur.";
+            string icerik = "SayÃ½n " + textBox4.Text + " " + textBox5.Text + ", " + dateTimePicker1.Text + " tarihinde " + comboBox1.Text + " bÃ¶lÃ¼mÃ¼nden randevunuz oluÃ¾turulmuÃ¾tur.";
 
             sc.Credentials = new NetworkCredential("testhesap94@outlook.com", "Cold7Basdq");
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("testhesap94@outlook.com", "Eren Yalçın");
+            mail.From = new MailAddress("testhesap94@outlook.com", "Eren YalÃ§Ã½n");
             mail.To.Add(kime);
             //mail.To.Add("alici2@mail.com");
             mail.Subject = konu;
@@ -161,7 +161,7 @@ namespace Randevu
             }
             if(label5.Text==textBox2.Text)
             {
-                MessageBox.Show("Giriş başarılı");
+                MessageBox.Show("GiriÃ¾ baÃ¾arÃ½lÃ½");
                 label1.Visible = false;
                 label2.Visible = false;
                 label3.Visible = false;
@@ -189,7 +189,7 @@ namespace Randevu
             }
             else
             {
-                MessageBox.Show("Hatalı giriş. Kayıt olmadıysanız lütfen kayıt olunuz.");
+                MessageBox.Show("HatalÃ½ giriÃ¾. KayÃ½t olmadÃ½ysanÃ½z lÃ¼tfen kayÃ½t olunuz.");
             }
             
             dbcon.Close();           
